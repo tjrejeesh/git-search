@@ -17,10 +17,10 @@ Assumptions:
 Subtasks:
 
 1. Create react app with bootstrapping tool - create-react-app
-2. Identify the dependancies 
+2. Identify the dependencies 
     - Styling - installed node-sass
     - UI Library - Semantic UI React  
-3. Invole the Github API to fetch the data
+3. Invoke the Github API to fetch the data
     - https://api.github.com/users/USERNAME/repos
 4. Create form field to search the git name
 5. Create table using semantic ui react library
@@ -58,6 +58,20 @@ The application is to search git repos
 ## Clone the project repository
 ```bash
 git clone https://github.com/tjrejeesh/git-search.git
+```
+
+## Run the application
+```bash
+cd git-search
+
+install the dependencies:
+npm install
+
+run client:
+npm start
+
+Local:            http://localhost:3000/
+
 ```
 
 ## Demo
