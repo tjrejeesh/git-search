@@ -64,15 +64,22 @@ function SearchTable() {
                         >
                             Watchers Count
                         </Table.HeaderCell>
+                        <Table.HeaderCell
+                            sorted={column === 'stargazers_count' ? direction : null}
+                            onClick={handleSort('stargazers_count')}
+                        >
+                            Stargazers Count
+                        </Table.HeaderCell>
                     </Table.Row>
                 </Table.Header>
                 {tableData ?
                     <Table.Body>
-                        {_.map(tableData, ({ id, name, watchers_count }) => (
+                        {_.map(tableData, ({ id, name, watchers_count, stargazers_count }) => (
                             <Table.Row key={id}>
                                 <Table.Cell>{id}</Table.Cell>
                                 <Table.Cell>{name}</Table.Cell>
                                 <Table.Cell>{watchers_count}</Table.Cell>
+                                <Table.Cell>{stargazers_count}</Table.Cell>
                             </Table.Row>
                         ))}
                     </Table.Body>
